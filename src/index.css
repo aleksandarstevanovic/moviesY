@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+@import url('https://fonts.googleapis.com/css?family=Butcherman&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
+
+#website-name{
+  font-family: 'Butcherman', cursive;
+  color:#fbc558;
+  font-size: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1,h2{
+  font-family: 'Bangers', cursive;
+}
+
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:  rgb(249,249,249) no-repeat;
+}
+.loader img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+.carousel-item:after, .poster-container:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(68, 0, 14, .4);
+}
+
+.slick-prev:before, .slick-next:before {
+  margin-top:0px !important;
+  font-size: 35px !important;
+    color: #000000 !important;
+}
+
+
+#sidebar{
+  position: fixed;
+ z-index: 20;
+  min-height: 200vh;
+ 
+}
+
+
+#sidebar{
+  margin-top: 80px;
+  background-color: #364859;
+}
+.nav-link {
+  font-size: 1.2em;
+  color:white !important;
+}
+.nav-link:hover {
+  cursor: pointer;
+  color:red !important;
+}
+
+
+#topnav{
+ 
+  padding: 0;
+  position: fixed;
+ height: 90px;
+ width: 100%;
+ z-index: 123;
+}
+
+#powered-by{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+
+
+.slide{
+outline: none !important;
+
+}
+
+.carousel{
+  margin-top: 80px !important;
+  width: 100%;
+}
+
+#searchForm{
+width: 50%;
+
+}
+
+#searchForm input {
+  border-radius: 25px !important;
+  width: 65%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .08);
+  color: white;
+}
+
+#searchForm button {
+  margin-left: 5px !important;
+  width: 25%;
+  height: 40px;
+  border-radius: 25px !important;
+  background-color: #ff2a55;
+  opacity: .9;
+}
+
+#search-form button:hover {
+  opacity: 1;
+}
+
+#total-results{
+  margin-top: 100px!important;
+}
+
+.poster{
+  width:100%;
+  margin-top: 80px;
+
+}
+.metaMovie{
+position: relative;
+}
+.meta{
+  position: absolute;
+  bottom:6%;
+  left: 3%;
+  color:white;
+}
+
+.blockquote{
+  border-left: 3px solid #ff2a55;
+  padding-left: 8px;
+}
+.imgslide{
+  width: 100%;
+  transition: 0.2s;
+ height: 100%;
+}
+
+.imgslide:hover, .searchMovies{
+  transform: scale(1.1);
+   filter: brightness(30%);
+   
+}
+
+#star{
+  color:#ffc107
+}
+a:hover{
+  cursor: pointer;
+  color:black !important;
+  text-decoration: none !important;
+  color:grey !important;
+  
+}
+a{
+  color:black !important;
+  outline: none !important;
+}
+
+
+@media all and (max-width: 768px) {
+  .movies{
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+@media all and (max-width: 575px) {
+  #logo{
+    width: 50 !important;
+    height: 50 !important;
+  }
 }
